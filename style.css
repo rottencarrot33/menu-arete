@@ -1,0 +1,110 @@
+:root {
+    --color-bg: #f9f9ff;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-accent: #4a4946;
+    --color-blue: #007daf;
+    --color-text-light: #fff;
+}
+
+/* Utility Classes */
+.menu-item {
+    transition: all 0.3s ease;
+}
+.hidden {
+    display: none;
+}
+
+/* Main Styles */
+body {
+    background-color: var(--color-bg);
+}
+
+.card {
+    background-color: var(--color-white);
+    height: 150px;
+    border: none;
+}
+
+.card-body-drinks {
+    height: 57px;
+}
+
+.card-title {
+    color: var(--color-accent);
+}
+
+.btn {
+    background-color: var(--color-white) !important;
+    color: var(--color-blue);
+}
+
+.btn:hover {
+    background-color: var(--color-blue) !important;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: none !important;
+    box-shadow: none;
+    background-color: var(--color-blue) !important;
+    color: var(--color-text-light);
+}
+
+header {
+    width: 100vw;
+    height: 30vh;
+    background-image: url(img/arete_logo.png);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media (min-width: 900px) {
+    header {
+        display: none;
+        
+    }
+
+    .title-main {
+        margin-top: 100px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        padding-top: 100px;
+    }
+}
+
+footer {
+    background-color: var(--color-blue);
+    color: var(--color-text-light);
+    padding: 1rem;
+    text-align: center;
+}
+
+.drinks-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drinks-title span {
+    margin-left: auto;
+}
+
+.title-main {
+    color: var(--color-blue);
+}
