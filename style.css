@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
     --color-bg: #f9f9ff;
     --color-white: #fff;
@@ -16,13 +18,17 @@
 }
 
 /* Main Styles */
+
+
 body {
-    background-color: var(--color-bg);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-text-light);
 }
 
+
 .card {
-    background-color: var(--color-white);
-    height: 150px;
+    background-color: var(--color-bg);
+    height: auto;
     border: none;
 }
 
@@ -36,11 +42,11 @@ body {
 
 .btn {
     background-color: var(--color-white) !important;
-    color: var(--color-blue);
+    color: var(--color-accent);
 }
 
 .btn:hover {
-    background-color: var(--color-blue) !important;
+    background-color: var(--color-accent) !important;
 }
 
 .btn:focus,
@@ -48,14 +54,14 @@ body {
 .btn.active {
     outline: none !important;
     box-shadow: none;
-    background-color: var(--color-blue) !important;
+    background-color: var(--color-accent) !important;
     color: var(--color-text-light);
 }
 
 header {
     width: 100vw;
     height: 30vh;
-    background-image: url(img/arete_logo.png);
+    background-image: url(img/logo_restaurant.png);
     background-repeat: no-repeat;
     background-position: 50% 60%;
     background-size: cover;
@@ -89,7 +95,7 @@ header {
 }
 
 footer {
-    background-color: var(--color-blue);
+    background-color: var(--color-accent);
     color: var(--color-text-light);
     padding: 1rem;
     text-align: center;
@@ -106,5 +112,5 @@ footer {
 }
 
 .title-main {
-    color: var(--color-blue);
+    color: var(--color-accent);
 }

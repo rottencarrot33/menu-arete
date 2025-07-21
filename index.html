@@ -15,7 +15,7 @@
     </header>
 
     <div class="container mt-0">
-        <h1 class="text-center mb-4 title-main">Restaurant & Bar Menu</h1>
+        <h1 class="text-center mb-4 title-main">Room Service Menu</h1>
         
         <div class="row mb-4">
             <div class="col-12 text-center">
@@ -29,25 +29,21 @@
         <div class="row mb-4">
             <div class="col-12 text-center">
                 <div class="btn-group flex-wrap" role="group" aria-label="Menu categories" id="foodCategories">
-                    <button type="button" class="btn active" data-filter="brunch">Brunch</button>
-                    <button type="button" class="btn" data-filter="pizza">Snacks</button>
-                    <button type="button" class="btn" data-filter="appetizers">Appetizers</button>
+                    <button type="button" class="btn active" data-filter="appetizers">Appetizers</button>
                     <button type="button" class="btn" data-filter="salads">Salads</button>
-                    
-                    
-                    
                     <button type="button" class="btn" data-filter="meat">Main Dishes</button>
                     <button type="button" class="btn" data-filter="pasta">Pasta</button>
+                    <button type="button" class="btn" data-filter="snacks">Snacks</button>
                     <button type="button" class="btn" data-filter="desserts">Desserts</button>
                     
                 </div>
                 <div class="btn-group flex-wrap hidden" role="group" aria-label="Drinks categories" id="drinkCategories">
-                    <button type="button" class="btn active" data-filter="coffee">Coffee</button>
-                    <button type="button" class="btn" data-filter="softdrinks">Soft Drinks</button>
+                    
+                    <button type="button" class="btn active" data-filter="softdrinks">Soft Drinks</button>
                     <button type="button" class="btn" data-filter="spirits">Spirits</button>
                     <button type="button" class="btn" data-filter="cocktails">Cocktails</button>
                     <button type="button" class="btn" data-filter="beers">Beers</button>
-                    <button type="button" class="btn" data-filter="wine">Wine</button>
+                    <!-- <button type="button" class="btn" data-filter="wine">Wine</button> -->
                 </div>
             </div>
         </div>
@@ -55,42 +51,17 @@
         <div class="row" id="menu-items">
             <!-- Food Items -->
 
-            <!-- Brunch -->
-            <div class="col-md-6 col-lg-4 menu-item" data-category="brunch" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Foccacia Sandwich</h5>
-                        <p class="card-text">Eggplant, pesto, cherry tomatoes and local feta cheese</p>
-                        <p class="card-text"><small class="text-muted">€9</small></p>
-                    </div>
-                </div>
-            </div>
+            
 
-            <div class="col-md-6 col-lg-4 menu-item" data-category="brunch" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Scrambled eggs</h5>
-                        <p class="card-text">free range eggs served with toasted bread and butter</p>
-                        <p class="card-text"><small class="text-muted">€8</small></p>
-                    </div>
-                </div>
-            </div>
+            
 
-            <div class="col-md-6 col-lg-4 menu-item" data-category="brunch" data-type="food">
+            <!-- Appetizers -->
+             <div class="col-md-6 col-lg-4 menu-item" data-category="appetizers" data-type="food">
+                <div class="text-center"><h5>1pm - 9pm</h5></div>
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Sweet Pancakes</h5>
-                        <p class="card-text">with maple syrup and fresh berries</p>
-                        <p class="card-text"><small class="text-muted">€8</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 menu-item" data-category="brunch" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Pancakes</h5>
-                        <p class="card-text">free range fried egg, crispy bacon and butter </p>
+                        <h5 class="card-title">Deep Sea</h5>
+                        <p class="card-text">Taramas made with evo olive oil and fresh lemon juice <br>served with crostini oregano</p>
                         <p class="card-text"><small class="text-muted">€10</small></p>
                     </div>
                 </div>
@@ -98,11 +69,20 @@
 
             
 
-            <!-- Appetizers -->
             <div class="col-md-6 col-lg-4 menu-item" data-category="appetizers" data-type="food">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Beef meatballs</h5>
+                        <h5 class="card-title">Smoked Eggplant and Florini Peppers</h5>
+                        <p class="card-text">Served with garlic, apple vinegar, parsley, black garlic crumble, and black garlic mousse</p>
+                        <p class="card-text"><small class="text-muted">€19</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="appetizers" data-type="food">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Meatballs</h5>
                         <p class="card-text">Juicy beef meatballs seasoned with herbs, served with french fries</p>
                         <p class="card-text"><small class="text-muted">€12</small></p>
                     </div>
@@ -112,23 +92,26 @@
             <div class="col-md-6 col-lg-4 menu-item" data-category="appetizers" data-type="food">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Chicken bites</h5>
-                        <p class="card-text">homemade chicken bites served with french fries and aioli sauce</p>
+                        <h5 class="card-title">Chicken Bites</h5>
+                        <p class="card-text">Homemade chicken bites served with french fries and aioli sauce</p>
                         <p class="card-text"><small class="text-muted">€12</small></p>
                     </div>
                 </div>
             </div>
+
+            
 
             
 
 
             <!-- Salads -->
             <div class="col-md-6 col-lg-4 menu-item" data-category="salads" data-type="food">
+                <div class="text-center"><h5>1pm - 9pm</h5></div>
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Greek salad</h5>
-                        <p class="card-text">Tomato, bell peppers, cocumber, onion, local feta cheese, extra virgin olive oil and carob rusks</p>
-                        <p class="card-text"><small class="text-muted">€13</small></p>
+                        <h5 class="card-title">Garden Salad</h5>
+                        <p class="card-text">Green leaf salad, pear fillets, anthotyro cheese, black sesame, and lemon vinaigrette</p>
+                        <p class="card-text"><small class="text-muted">€14</small></p>
                     </div>
                 </div>
             </div>
@@ -136,9 +119,8 @@
             <div class="col-md-6 col-lg-4 menu-item" data-category="salads" data-type="food">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Caesar's salad
-                        </h5>
-                        <p class="card-text">Chicken, lettuce, parmesan flakes, croutons and caesar dressing</p>
+                        <h5 class="card-title">Greek Salad</h5>
+                        <p class="card-text">Skinless tomato, extra virgin olive oil, thyme, local feta cheese, caper leaves, and carob crumble</p>
                         <p class="card-text"><small class="text-muted">€15</small></p>
                     </div>
                 </div>
@@ -147,90 +129,22 @@
             <div class="col-md-6 col-lg-4 menu-item" data-category="salads" data-type="food">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Green salad</h5>
-                        <p class="card-text">Mixed greens, cucumber, tomato, gorgonzola dolce, pear compote and lemon vinaigrette</p>
+                        <h5 class="card-title">Heart Salad</h5>
+                        <p class="card-text">Beetroot with valerian salad, tsalafouti cheese, basil oil and lime zest</p>
                         <p class="card-text"><small class="text-muted">€12</small></p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 menu-item" data-category="salads" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Caprese Salad</h5>
-                        <p class="card-text">With Cherry Tomatoes, Mozzarella, Basil and Balsamic Vinegar</p>
-                        <p class="card-text"><small class="text-muted">€11</small></p>
-                    </div>
-                </div>
-            </div>
-
-
             
-            <!-- Pizza -->
-            <div class="col-md-6 col-lg-4 menu-item" data-category="pizza" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Pinsa Margherita</h5>
-                        <p class="card-text">Tomato Sauce, Mozzarella and Basil</p>
-                        <p class="card-text"><small class="text-muted">€14</small></p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-6 col-lg-4 menu-item" data-category="pizza" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Pinsa <b>arete</b></h5>
-                        <p class="card-text">Tomato sauce, Mozzarella and Prosciutto crudo</p>
-                        <p class="card-text"><small class="text-muted">€15</small></p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-6 col-lg-4 menu-item" data-category="pizza" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Beef Burger</h5>
-                        <p class="card-text">100% beef from a local farm, tomato, iceberg, cheddar, bacon and mayo served with french fries</p>
-                        <p class="card-text"><small class="text-muted">€15</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 menu-item" data-category="pizza" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Chicken Burger</h5>
-                        <p class="card-text">Chicken from local farms, tomato, iceberg, cheddar, bacon and aioli sauce served with french fries</p>
-                        <p class="card-text"><small class="text-muted">€14</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 menu-item" data-category="pizza" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Mushroom Burger</h5>
-                        <p class="card-text">Made with sauvignon mushrooms, black truffle sauce, iceberg, tomato, truffle mayo</p>
-                        <p class="card-text"><small class="text-muted">€13</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 menu-item" data-category="pizza" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Club Sandwich</h5>
-                        <p class="card-text">With ciabatta bread, tomato, iceberg, gouda cheese, turkey, bacon, mayo</p>
-                        <p class="card-text"><small class="text-muted">€14</small></p>
-                    </div>
-                </div>
-            </div>
             
             
 
             <!-- Pasta -->
             <div class="col-md-6 col-lg-4 menu-item" data-category="pasta" data-type="food">
+                <div class="text-center"><h5>1pm - 9pm</h5></div>
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Linguini Napoletana</h5>
@@ -250,17 +164,82 @@
                 </div>
             </div>
 
-           
+            <div class="col-md-6 col-lg-4 menu-item" data-category="pasta" data-type="food">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sautéed Shrimps Linguini</h5>
+                        <p class="card-text">Sautéed shrimps, onion, green bell peppers, tarragon, semi-dried tomato pesto, and basil bisque</p>
+                        <p class="card-text"><small class="text-muted">€20</small></p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Snacks -->
+           
+        <div class="col-md-6 col-lg-4 menu-item" data-category="snacks" data-type="food">
+                <div class="text-center"><h5>1pm - 9pm</h5></div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pinsa Margherita</h5>
+                        <p class="card-text">Organic tomato sause, mozzarella and prosciutto crudo</p>
+                        <p class="card-text"><small class="text-muted">€14</small></p>
+                    </div>
+                </div>
+            </div>
+
+           
+                <div class="col-md-6 col-lg-4 menu-item" data-category="snacks" data-type="food">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pinsa Arete</h5>
+                        <p class="card-text">Organic tomato sause, mozzarella and prosciutto crudo</p>
+                        <p class="card-text"><small class="text-muted">€15</small></p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="snacks" data-type="food">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Burger</h5>
+                        <p class="card-text">100% beef sourced from a local farm, tomato, iceberg, cheddar, bacon and mayo served with french fries</p>
+                        <p class="card-text"><small class="text-muted">€15</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="snacks" data-type="food">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Burger</h5>
+                        <p class="card-text">Free-range chicken from local farms, tomato, iceberg, cheddar, bacon and aioli sauce served with french fries</p>
+                        <p class="card-text"><small class="text-muted">€14</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="snacks" data-type="food">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Club Sandwich</h5>
+                        <p class="card-text">With ciabatta bread, tomato, iceberg, gouda cheese, turkey, bacon, mayo</p>
+                        <p class="card-text"><small class="text-muted">€14</small></p>
+                    </div>
+                </div>
+            </div>
 
 
             <!-- Meat -->
-            <!-- <div class="col-md-6 col-lg-4 menu-item" data-category="meat" data-type="food">
+            
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="meat" data-type="food">
+                <div class="text-center"><h5>1pm - 9pm</h5></div>
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Rib-Eye</h5>
-                        <p class="card-text">Served with Grilled Veggetables, Asparagus and BBQ Sauce</p>
-                        <p class="card-text"><small class="text-muted">€42</small></p>
+                        <h5 class="card-title">Greek Summer in the Dish</h5>
+                        <p class="card-text">Greek vegetables in fresh tomato sauce, feta cheese, sautéed with onions, peppers, and zucchini</p>
+                        <p class="card-text"><small class="text-muted">€14</small></p>
                     </div>
                 </div>
             </div>
@@ -268,9 +247,9 @@
             <div class="col-md-6 col-lg-4 menu-item" data-category="meat" data-type="food">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Grilled Steaks</h5>
-                        <p class="card-text">Served with Country Fries, or Grilled Vegetables</p>
-                        <p class="card-text"><small class="text-muted">€28</small></p>
+                        <h5 class="card-title">Grilled Free-Range Chicken</h5>
+                        <p class="card-text">Grilled free-range chicken, served with vegetables and green salad with lemon-citrus vinaigrette</p>
+                        <p class="card-text"><small class="text-muted">€18</small></p>
                     </div>
                 </div>
             </div>
@@ -278,38 +257,45 @@
             <div class="col-md-6 col-lg-4 menu-item" data-category="meat" data-type="food">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Grilled Chicken Fillet</h5>
-                        <p class="card-text">Served with Country Fries, or Grilled Vegetables</p>
-                        <p class="card-text"><small class="text-muted">€26</small></p>
+                        <h5 class="card-title">Rib-eye</h5>
+                        <p class="card-text">Grilled rib-eye, served with potato purée with thyme and honey, asparagus, and pepper sauce</p>
+                        <p class="card-text"><small class="text-muted">€38</small></p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 menu-item" data-category="meat" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Grilled Salmon</h5>
-                        <p class="card-text">Served with Grilled Vegetables and Balsamic Vinegar</p>
-                        <p class="card-text"><small class="text-muted">€32</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 menu-item" data-category="meat" data-type="food">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Grilled Patty</h5>
-                        <p class="card-text">Served with Country Fries or Grilled Vegetables</p>
-                        <p class="card-text"><small class="text-muted">€22</small></p>
-                    </div>
-                </div>
-            </div> -->
+            
 
             
 
 
             <!-- Desserts -->
+            
+
             <div class="col-md-6 col-lg-4 menu-item" data-category="desserts" data-type="food">
+                <div class="text-center"><h5>1pm - 9pm</h5></div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Baklava</h5>
+                        <p class="card-text">Served with ice cream</p>
+                        <p class="card-text"><small class="text-muted">9</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="desserts" data-type="food">
+                
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Greek Yogurt Delight</h5>
+                        <p class="card-text">Greek strained yogurt with honey, walnuts, and thyme</p>
+                        <p class="card-text"><small class="text-muted">€9</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="desserts" data-type="food">
+                
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Fruit salad</h5>
@@ -345,114 +331,7 @@
             <!-- Drink Items -->
 
 
-            <!-- Coffee -->
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Espresso <span><small class="text-muted card-text">€3</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Espresso Double<span><small class="text-muted card-text">€4</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Cappuccino <span><small class="text-muted card-text">€4.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Cappuccino Double <span><small class="text-muted card-text">€5.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Latte <span><small class="text-muted card-text">€4.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Frappe <span><small class="text-muted card-text">€4</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Americano <span><small class="text-muted card-text">€4.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-           
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Greek Coffee <span><small class="text-muted card-text">€4</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Hot Chocolate <span><small class="text-muted card-text">€4.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Iced Chocolate <span><small class="text-muted card-text">€4.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Tea <span><small class="text-muted card-text">€4</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Iced Espresso (Freddo)<span><small class="text-muted card-text">€4.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="coffee" data-type="drinks">
-                <div class="card mb-4 card-body-drinks">
-                    <div class="card-body">
-                        <h5 class="card-title drinks-title">Iced Cappuccino (Freddo) <span><small class="text-muted card-text">€4.5</small></span></h5>
-                        
-                    </div>
-                </div>
-            </div>
-          
+            
             
 
 
@@ -694,7 +573,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 menu-item" data-category="cocktails" data-type="drinks">
+            <!-- <div class="col-md-6 col-lg-4 menu-item" data-category="cocktails" data-type="drinks">
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Dry Martini</h5>
@@ -702,7 +581,7 @@
                         <p class="card-text"><small class="text-muted">€14</small></p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-6 col-lg-4 menu-item" data-category="cocktails" data-type="drinks">
                 <div class="card mb-4">
                     <div class="card-body">
@@ -865,7 +744,7 @@
     <footer>
         <div class="container">
             <p>Room Service available from 1pm to 9pm <br>
-                For room service call '0' <br>
+                For room service call '200' <br>
                 Please inform us of any allergies</p>
 
            
